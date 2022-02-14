@@ -1,19 +1,22 @@
-jsonCallback({
-    "preguntas random de musica":[
-    {
+var pregunta1 = {
+    "pregunta1":{
         "pregunta1:": "¿Cual es el nombre real de Snoop Dogg?",
         "respuestaC1:": "Calvin Cordozar Broadus Jr.",
         "respuesta2:": "Jayceon Terrell Taylor",
         "respuesta3:": "Cameron Jibril Thomaz",
         "respuesta4:": "Abel Makkonen Tesfaye"
     },
-    {
+}
+var pregunta2 ={
+    "pregunta2":{
         "pregunta2:": "¿Cual es el album mas nuevo de Tyler, The Creator (2022)?",
         "respuesta5:": "Igor",
         "respuesta6:": "Goblin",
         "respuesta7:": "Flower Boy",
         "respuestaC8:": "Call me if you get lost"
     },
+}
+/*
     {
         "pregunta3:": "¿Quien compuso el soundtrack original de Star Wars?",
         "repuesta9:" : "Howard Shore",
@@ -140,5 +143,38 @@ jsonCallback({
         "respuestaC79:": "2Pac",
         "respuesta80:": "Eminem"
     }
-    ]
-    })
+    }
+*/
+
+var uno = {
+    "pregunta1": "¿Cual es el nombre real de Snoop Dogg?",
+    "respuestaC1": "Calvin Cordozar Broadus Jr.",
+    "respuesta2": " Jayceon Terrell Taylor",
+    "respuesta3": " Cameron Jibril Thomaz",
+    "respuesta4": " Abel Makkonen Tesfaye"
+}
+
+var preguntas =[uno.pregunta1]
+var respuestas = [
+    [uno.respuestaC1, uno.respuesta2, uno.respuesta3, uno.respuesta4]
+]
+var correctas = ["0"]
+
+document.getElementById("p1").innerHTML = preguntas[0]
+document.getElementById("r1").innerHTML = respuestas[0][0]
+document.getElementById("r2").innerHTML = respuestas[0][1]
+document.getElementById("r3").innerHTML = respuestas[0][2]
+document.getElementById("r4").innerHTML = respuestas[0][3]
+
+
+/*
+function myFunction() { 
+    document.getElementById("pregunta1").style.display="none"; 
+    document.getElementById("mainFrameOne").style.display="none"; 
+    document.getElementById("mainFrameTwo").style.display="block";
+    document.getElementById("pregunta2").style.display="block";
+    document.getElementById("json2").innerHTML = JSON.stringify(pregunta2, undefined, 2);
+}
+
+    document.getElementById("json1").innerHTML = JSON.stringify(pregunta1, undefined, 2);
+    */
