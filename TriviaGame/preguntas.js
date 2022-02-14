@@ -56,18 +56,18 @@ var ocho ={
     "respuesta32": "Ronnie Radke"
 }
 var nueve = {
-    "pregunta9:": "¿Quien Compuso la cancion de tema de 'The Mandalorian'",
-    "respuesta33:": "John Williams",
-    "respuesta34:": "John Adams",
-    "respuestaC35:": "Ludwig Göransson",
-    "respuesta36:": "Philip Glass"
+    "pregunta9": "¿Quien Compuso la cancion de tema de 'The Mandalorian'",
+    "respuesta33": "John Williams",
+    "respuesta34": "John Adams",
+    "respuestaC35": "Ludwig Göransson",
+    "respuesta36": "Philip Glass"
 }
 var diez = {
-    "pregunta10:" :"Se rindió homenaje a la ex mujer de David Bowie con una canción de The Rolling Stones, ¿nombre de la canción?",
-    "respuesta37:": "Wild Horses",
-    "respuesta38:": "Gimme Shelter",
-    "respuestaC39:": "Angie",
-    "respuesta40:": "Satisfaction"
+    "pregunta10" :"Se rindió homenaje a la ex mujer de David Bowie con una canción de The Rolling Stones, ¿nombre de la canción?",
+    "respuesta37": "Wild Horses",
+    "respuesta38": "Gimme Shelter",
+    "respuestaC39": "Angie",
+    "respuesta40": "Satisfaction"
 }
 
 var once = {
@@ -140,13 +140,29 @@ var veinte ={
     "respuestaC79": "2Pac",
     "respuesta80": "Eminem"
 }
-var preguntas = [uno.pregunta1, dos.pregunta2, tres.pregunta3, fo.pregunta4]
+var preguntas = [uno.pregunta1, dos.pregunta2, tres.pregunta3, fo.pregunta4, cinco.pregunta5, six.pregunta6, siete.pregunta7, ocho.pregunta8, nueve.pregunta9, diez.pregunta10, once.pregunta11, deuce.pregunta12, trec.pregunta13, foten.pregunta14, fite.pregunta15, rick.pregunta16, morty.pregunta17, ochos.pregunta18, pac.pregunta19, veinte.pregunta20]
 
 var respuestas = [
     [uno.respuestaC1, uno.respuesta2, uno.respuesta3, uno.respuesta4],
     [dos.respuesta5, dos.respuesta6, dos.respuesta7, dos.respuestaC8],
     [tres.repuesta9, tres.respuestaC10, tres.respuesta11, tres.respuesta12],
-    [fo.respuesta13, fo.respuesta14, fo.respuestaC15, fo.respuesta16]
+    [fo.respuesta13, fo.respuesta14, fo.respuestaC15, fo.respuesta16],
+    [cinco.respuesta17, cinco.respuestaC18, cinco.respuesta19, cinco.respuesta20],
+    [six.respuestaC21, six.respuesta22, six.respuesta23, six.respuesta24],
+    [siete.respuestaC25, siete.respuesta26, siete.respuesta27, siete.respuesta28],
+    [ocho.respuesta29, ocho.respuestaC30, ocho.respuesta31, ocho.respuesta32],
+    [nueve.respuesta33, nueve.respuesta34, nueve.respuestaC35, nueve.respuesta36],
+    [diez.respuesta37, diez.respuesta38, diez.respuestaC39, diez.respuesta40],
+    [once.respuesta41, once.respuesta42, once.respuesta43, once.respuestaC44],
+    [deuce.respuestaC45, deuce.respuesta46, deuce.respuesta47, deuce.respuesta48],
+    [trec.respuesta49, trec.respuesta50, trec.respuestaC51, trec.respuesta52],
+    [foten.respuesta53, foten.respuestaC54, foten.respuesta55, foten.respuesta56],
+    [fite.respuestaC57, fite.respuesta58, fite.respuesta59, fite.respuesta60],
+    [rick.respuesta61, rick.respuesta62, rick.respuestaC63, rick.respuesta64],
+    [morty.respuestaC65, morty.respuesta66, morty.respuesta67, morty.respuesta68],
+    [ochos.respuesta69, ochos.respuestaC70, ochos.respuesta71, ochos.respuesta72],
+    [pac.respuesta73, pac.respuesta74, pac.respuesta75, pac.respuestaC76],
+    [veinte.respuesta77, veinte.respuesta78, veinte.respuestaC79, veinte.respuesta80],
 ]
 
 var correctas = ["0"]
