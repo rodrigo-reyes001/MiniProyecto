@@ -1,1 +1,3 @@
 # MiniProyecto
+
+No logre que funcionara el stop a las 5 preguntas y aun no da puntos :( Intente 2 dias seguidos y no logre, creo qeu ets malo el counter o algo...
