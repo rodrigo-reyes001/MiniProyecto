@@ -165,9 +165,9 @@ var respuestas = [
     [veinte.respuesta77, veinte.respuesta78, veinte.respuestaC79, veinte.respuesta80]
 ]
 
-var correctas = ["0", 3, 1, 2, 1, ]
+var correctas = ["0", "3", "1", "2", "1", "0", "0", "1", "2", "3", "0", "1", "0", "2", "0", "1", "3", "2"]
 
-var count = 0;
+let counter = 0;
 
 
 function beg(){
@@ -180,14 +180,12 @@ function beg(){
 }
 
 function GetSelected() {
-    var yes = new Array();
-    var pick = document.getElementById("p1");
-    var actualCorrectAnswerIndex = correctas[rand];
+    var arr = new Array();
     var userChecked = questionario.getElementsByTagName("INPUT");
   
       for (var i = 0; i < userChecked.length; i++) {
         if (userChecked[i].checked) {
-          yes.push(userChecked[i].value);
+          arr.push(userChecked[i].value);
           }
       }
 }
@@ -203,13 +201,11 @@ function next(){
     document.getElementById("r2").innerHTML = respuestas[Rand][1];
     document.getElementById("r3").innerHTML = respuestas[Rand][2];
     document.getElementById("r4").innerHTML = respuestas[Rand][3];
-    count ++;
+    counter ++;
+    if(counter > 5){
+        alert("QUIZ ENDED")
+        }
 }
-function hideDiv() {
-    if(count == 5)
-	document.getElementById('next').style.display = "none";
-    
-    else
-        document.getElementById('sig').style.display = 'block';
-}
+
+
 

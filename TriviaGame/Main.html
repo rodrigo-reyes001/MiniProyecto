@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="Trivia.css">
         <title>Trivia Game Preguntas</title>
     </head>
-    <body onload="beg()">
+    <body onload="beg(), func()">
         <h1>Preguntas Random de Musica</h1>
         <h2>Pregunta: </h2>
         <div id="pregunta1">
@@ -31,7 +31,7 @@
                 <br>
                 
                 <div id="sig">
-                <input id="next" onclick="next()" type="submit" value="Submit"> 
+                <button id="next" onclick="next()"> Submit</button>
                 </div>
                 <div id="fin" style="display:none;">
                     <a href="trivia.html">
