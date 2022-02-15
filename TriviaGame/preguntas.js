@@ -167,7 +167,7 @@ var respuestas = [
 
 var correctas = ["0", "3", "1", "2", "1", "0", "0", "1", "2", "3", "0", "1", "0", "2", "0", "1", "3", "2"]
 
-let counter = 0;
+var count = 0;
 
 
 function beg(){
@@ -201,11 +201,12 @@ function next(){
     document.getElementById("r2").innerHTML = respuestas[Rand][1];
     document.getElementById("r3").innerHTML = respuestas[Rand][2];
     document.getElementById("r4").innerHTML = respuestas[Rand][3];
-    counter ++;
-    if(counter > 5){
-        alert("QUIZ ENDED")
-        }
+    count ++;
 }
-
-
+    if(count == 5){
+        document.getElementById('next').style.display = "none";
+        }
+        else{
+            document.getElementById('sig').style.display = 'block';
+        }
 
