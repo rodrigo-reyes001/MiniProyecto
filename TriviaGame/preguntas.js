@@ -162,29 +162,54 @@ var respuestas = [
     [morty.respuestaC65, morty.respuesta66, morty.respuesta67, morty.respuesta68],
     [ochos.respuesta69, ochos.respuestaC70, ochos.respuesta71, ochos.respuesta72],
     [pac.respuesta73, pac.respuesta74, pac.respuesta75, pac.respuestaC76],
-    [veinte.respuesta77, veinte.respuesta78, veinte.respuestaC79, veinte.respuesta80],
+    [veinte.respuesta77, veinte.respuesta78, veinte.respuestaC79, veinte.respuesta80]
 ]
 
-var correctas = ["0"]
+var correctas = ["0", 3, 1, 2, 1, ]
+
+var count = 0;
 
 
-
-Rand = Math.floor(Math.random() * 21);
-document.getElementById("p1").innerHTML = preguntas[Rand]
-document.getElementById("r1").innerHTML = respuestas[Rand][0]
-document.getElementById("r2").innerHTML = respuestas[Rand][1]
-document.getElementById("r3").innerHTML = respuestas[Rand][2]
-document.getElementById("r4").innerHTML = respuestas[Rand][3]
-
-
-/*
-function myFunction() { 
-    document.getElementById("pregunta1").style.display="none"; 
-    document.getElementById("mainFrameOne").style.display="none"; 
-    document.getElementById("mainFrameTwo").style.display="block";
-    document.getElementById("pregunta2").style.display="block";
-    document.getElementById("json2").innerHTML = JSON.stringify(pregunta2, undefined, 2);
+function beg(){
+    Rand = Math.floor(Math.random() * 19);
+    document.getElementById("p1").innerHTML = preguntas[Rand];
+    document.getElementById("r1").innerHTML = respuestas[Rand][0];
+    document.getElementById("r2").innerHTML = respuestas[Rand][1];
+    document.getElementById("r3").innerHTML = respuestas[Rand][2];
+    document.getElementById("r4").innerHTML = respuestas[Rand][3];
 }
 
-    document.getElementById("json1").innerHTML = JSON.stringify(pregunta1, undefined, 2);
-    */
+function GetSelected() {
+    var yes = new Array();
+    var pick = document.getElementById("p1");
+    var actualCorrectAnswerIndex = correctas[rand];
+    var userChecked = questionario.getElementsByTagName("INPUT");
+  
+      for (var i = 0; i < userChecked.length; i++) {
+        if (userChecked[i].checked) {
+          yes.push(userChecked[i].value);
+          }
+      }
+}
+
+function form(){
+    var x = document.getElementById("myForm").elements.length;
+}
+
+function next(){
+    Rand = Math.floor(Math.random() * 19);
+    document.getElementById("p1").innerHTML = preguntas[Rand];
+    document.getElementById("r1").innerHTML = respuestas[Rand][0];
+    document.getElementById("r2").innerHTML = respuestas[Rand][1];
+    document.getElementById("r3").innerHTML = respuestas[Rand][2];
+    document.getElementById("r4").innerHTML = respuestas[Rand][3];
+    count ++;
+}
+function hideDiv() {
+    if(count == 5)
+	document.getElementById('next').style.display = "none";
+    
+    else
+        document.getElementById('sig').style.display = 'block';
+}
+

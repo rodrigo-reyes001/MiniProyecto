@@ -4,39 +4,44 @@
         <link rel="stylesheet" href="Trivia.css">
         <title>Trivia Game Preguntas</title>
     </head>
-    <body>
+    <body onload="beg()">
         <h1>Preguntas Random de Musica</h1>
+        <h2>Pregunta: </h2>
         <div id="pregunta1">
-            <h2>Pregunta 1</h2>
             <p><span id="p1"></span></p>
-
+        </div>
+        <div id="mainFrameOne">
+            <form id="myForm">
             <input  type="radio" name="exampleRadios" id="exampleRadios1" value="0">
             <label  for="exampleRadios1">
                 <span id="r1"></span>
 
             <input  type="radio" name="exampleRadios" id="exampleRadios2" value="1" data-index="1">
-            <label  for="exampleRadios1">
+            <label  for="exampleRadios2">
                 <span id="r2"></span>
 
             <input  type="radio" name="exampleRadios" id="exampleRadios2" value="2" data-index="2">
-            <label  for="exampleRadios1">
+            <label  for="exampleRadios2">
                 <span id="r3"></span>
 
             <input  type="radio" name="exampleRadios" id="exampleRadios2" value="3" data-index="3">
-            <label  for="exampleRadios1">
+            <label  for="exampleRadios2">
                 <span id="r4"></span>
-        </div>
-        <div id="pregunta2" style="display:none;">
-            <h2>Pregunta 2</h2>
+                <br>
+                <br>
+                
+                <div id="sig">
+                <input id="next" onclick="next()" type="submit" value="Submit"> 
+                </div>
+                <div id="fin" style="display:none;">
+                    <a href="trivia.html">
+                    <button id="fin">finalizar</button>
+                    </a>
+                </div>
+            </form>
+
         </div>
 
-        <div id="mainFrameOne">
-            <pre id="json1"></pre>
-        </div>
-        <div id="mainFrameTwo" style="display:none;">
-            <pre id="json2"></pre>
-        </div>
-        <button onclick="myFunction()">siguiente</button>
 
         <script src="preguntas.js"></script>
     </body>
